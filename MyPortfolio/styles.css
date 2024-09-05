@@ -29,14 +29,33 @@ body{
 
 .header-inner{
     width: 80%;
-    height: 90%;
+    height: 80px;
+    /* height: auto; */
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: transparent;
     justify-content: flex-start;
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-transition{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
 }
 
 .header-logo{
@@ -44,16 +63,20 @@ body{
     display: flex;
     justify-self: flex-start;
     align-items: center;
-    
 }
 
 .header-logo h1{
     font-size: 2.5rem!important;
     color: rgb(240, 240, 240);
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
 }
 
 .header-navbar{
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     flex: 1;
     padding-left: 40px;
@@ -78,6 +101,20 @@ body{
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
+    animation: scroll-transition-links;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-transition-links{
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgb(20, 183, 137);
+    }
+    100%{
+        color: rgb(20, 183, 137);
+    }
 }
 
 .nav-link a::after{
@@ -89,6 +126,20 @@ body{
     left: 0;
     background-color: white;
     transition: all 0.3s ease;
+    animation: scroll-transition-links-after;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-transition-links-after{
+    0%{
+        color: white;
+    }
+    50%{
+        background-color: rgb(20, 183, 137);
+    }
+    100%{
+        background-color: rgb(20, 183, 137);
+    }
 }
 
 .nav-link a:hover::after{
@@ -114,11 +165,20 @@ body{
     border-radius: 100%;
     background-color: #ffffff;
     background-size: cover;
+    animation: scroll-transition-contact-icon;
+    animation-timeline: scroll(y);
 }
 
-.contact-icon:hover{
-    color: rgb(20, 183, 137);
-    transition: all 0.3s ease;
+@keyframes scroll-transition-contact-icon{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: rgb(20, 183, 137);
+    }
+    100%{
+        background-color: rgb(20, 183, 137);
+    }
 }
 
 .contact-number{
@@ -133,13 +193,48 @@ body{
     border-radius: 30px;
     font-size: 1rem;
     font-weight: bolder;
+    animation: scroll-transition-contact-number;
+    animation-timeline: scroll(y);
 
+}
+
+@keyframes scroll-transition-contact-number{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: white;
+        color: rgb(20, 183, 137);
+        border-color: rgb(20, 183, 137);
+    }
+    100%{
+        background-color: white;
+        color: rgb(20, 183, 137);
+        border-color: rgb(20, 183, 137);
+    }
 }
 
 .contact-number:hover{
     background-color: #ffffff;
     color: rgb(20, 183, 137);
     transition: all 0.3s ease;
+    cursor: pointer;
+    animation: scroll-transition-contact-number-hover;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-transition-contact-number-hover{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgb(20, 183, 137);
+        color: white;
+    }
+    100%{
+        background-color: rgb(20, 183, 137);
+        color: white;
+    }
 }
 
 /* Header Styling */
@@ -297,10 +392,11 @@ body{
 .about-outer{
     width: 100vw;
     height: auto;
-    margin-top: 90vh;
-    padding-bottom: 80px;
+    margin-top: 85vh;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .about-inner{
