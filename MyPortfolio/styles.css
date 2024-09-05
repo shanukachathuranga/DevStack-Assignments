@@ -22,8 +22,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-inner{
@@ -149,7 +150,8 @@ body{
     width: 100vw;
     height: 90vh;
     display: flex;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 .hero-svg-wrapper{
@@ -295,7 +297,8 @@ body{
 .about-outer{
     width: 100vw;
     height: auto;
-    padding: 80px 0;
+    margin-top: 90vh;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
 }
