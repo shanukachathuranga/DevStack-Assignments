@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: "SUSE", sans-serif;
@@ -287,4 +290,97 @@ body{
 
 /* Hero section styling */
 
+/* About section styling */
 
+.about-outer{
+    width: 100vw;
+    height: auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-inner{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about-inner-left{
+    width: 45%;
+    height: auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-inner-left > img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-inner-right{
+    width: 50%;
+    height: auto;
+}
+
+.about-inner-right-profile-card{
+    width: 90%;
+    height:auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(20, 183, 137);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-inner-right-profile{
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    display: inline-block;
+    border-radius: 100%;
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/happy-bearded-young-man.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.about-inner-right-profile-card > h2{
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.about-inner-right > h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-inner-right > p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(151, 151, 151);
+    margin-bottom: 20px;
+}
+.about-inner-right > p a{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+
+.about-inner-right > p a:hover{
+    text-decoration: none;
+    color: rgb(20, 183, 137);
+    font-weight: 600;
+}
+
+/* About section styling */
