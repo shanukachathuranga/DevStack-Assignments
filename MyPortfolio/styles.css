@@ -164,19 +164,34 @@ body{
     height: 100%;
 }
 
+.hero-inner-main{
+    width: 90%;
+    height: 75%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hero-circle-container{
     height: 450px;
     width: 480px;
-    position: absolute;
+    padding-bottom: 100px;
+    position: relative;
     border-radius: 100%;
-    top: 20%;
-    right: 8%;
+    top: 8%;
+    right: 1%;
 }
 
 .hero-circle-div{
     height: 350px;
     width: 350px;
-    position: relative;
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
 }
@@ -184,20 +199,19 @@ body{
 .hero-circle-container > img{
     height: 70%;
     width: auto;
+    padding-left: 100px;
     position: absolute;
-    top: 100px;
+    top: 50px;
+    right: 1%;
 }
 
 .hero-inner{
     width: 45%;
     height: 45vh;
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    bottom: 80px;
-    left: 12%;
 }
 
 .hero-inner-top{
