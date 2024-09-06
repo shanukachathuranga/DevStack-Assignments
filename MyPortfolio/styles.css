@@ -8,7 +8,7 @@ body{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    background-color: rgb(226, 225, 225);
+    background-color: rgb(244, 244, 244);
 }
 
 /* Header Styling */
@@ -40,6 +40,7 @@ body{
     border-radius: 15px;
     background-color: transparent;
     justify-content: flex-start;
+    transition: box-shadow 0.3s ease;
     animation: scroll-transition;
     animation-timeline: scroll(y);
 }
@@ -51,10 +52,12 @@ body{
     50%{
         background-color: white;
         color: black;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
     }
     100%{
         background-color: white;
         color: black;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -68,6 +71,7 @@ body{
 .header-logo h1{
     font-size: 2.5rem!important;
     color: rgb(240, 240, 240);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0)!important;
     animation: scroll-transition;
     animation-timeline: scroll(y);
 }
@@ -387,12 +391,12 @@ body{
 
 /* Hero section styling */
 
-/* About section styling */
+/* About section styling part1 */
 
 .about-outer{
     width: 100vw;
     height: auto;
-    margin-top: 85vh;
+    margin-top: 550px;
     padding: 80px 0;
     display: flex;
     justify-content: center;
@@ -482,4 +486,163 @@ body{
     font-weight: 600;
 }
 
-/* About section styling */
+/* About section styling part1 */
+
+/* About section styling part2 */
+
+.about-section{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(244, 244, 244);
+}
+
+.about-section-outer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-inner{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about-section-inner-left{
+    width: 42%;
+    height: calc(70% - 6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.about-section-inner-topic{
+    width:400px;
+    margin: 10px 0px 10px 40px;
+    font-size: 1.5rem;
+}
+
+.about-section-inner-topic > h2{
+    margin: 0;
+}
+
+.about-section-inner-table-wrapper{
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-section-inner-table-wrapper > p{
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.title-section{
+    width: 120px;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    font-size: 1.2rem;
+    color: rgb(20, 183, 137);
+}
+
+.data-section{
+    width: calc(100% - 120px);
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgb(209, 209, 209);
+    color: rgb(151, 151, 151);
+    font-weight: 500;
+}
+
+.rw2{
+    background-color: rgb(255, 249, 249);
+}
+
+.about-section-inner-right{
+    width: 42%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-style: DM Sans, sans-serif;
+}
+
+.about-section-inner-row-top{
+    width: calc(100% - 40px);
+    height: 100%;
+    display: flex;
+    margin-left: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.about-section-inner-row-bottom{
+    width: calc(100% - 40px);
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner-column-left{
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    border-right: 1px solid rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inner-column{
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-section-inner-right h3{
+    font-size: 62px;
+    margin: 0;
+}
+
+.about-section-inner-right p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(20, 183, 137);
+}
+
+/* About section styling part2 */
