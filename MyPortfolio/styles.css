@@ -1020,17 +1020,21 @@ body{
 }
 
 .psi-row1{
-    width: 800px;
+    width: 100%;
     height: 200px;
-    margin-left: auto;
-    justify-self: flex-start!important;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     align-items: center;
 }
 
+.psir1-spacing-div{
+    height: 100%;
+    width: 400px;
+    margin-right: 20px;
+}
+
 .psir1-title-section{
-    width:100%;
+    width:800px;
     height:100%;
     margin-right: 10px;
     border-radius: 20px;
@@ -1064,7 +1068,7 @@ body{
     margin-top: 20px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
