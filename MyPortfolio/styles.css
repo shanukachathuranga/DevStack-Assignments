@@ -757,7 +757,8 @@ body{
 
 .service-section{
     width: 100vw;
-    height: 1500px;
+    height: auto;
+    padding: 80px 0px;
     background-color: rgb(244, 244, 244);
     display: flex;
     justify-content: center;
@@ -984,8 +985,177 @@ body{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-
-
-
 /* service section styling  */
+
+/* project section styling  */
+
+.project-section{
+    width: 100vw;
+    height: auto;
+    padding: 80px 0px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-outer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.psi-row1{
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    justify-self: flex-start!important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.psir1-title-section{
+    width:100%;
+    height:100%;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #14b789;
+
+}
+
+.psir1-title-section > h2{
+    font-style: dm sans, sans-serif;
+    font-size: 48px;
+    margin-left: 24px;
+    color:white;
+}
+
+.psir1ts-image-frame{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/white-desk-work-study-aesthetics.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.psi-row2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.psir2-projects-card{
+    width: 400px;
+    height: 500px;
+    border: 2px solid #f9f9f9;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: box-shadow 0.5s ease;
+    overflow: hidden;
+    transition: border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.psir2-projects-card:hover{
+    border: 2px solid #14b789;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.psir2pc-heading{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.psir2pc-heading > p{
+    display: block;
+    margin: 5px 0px 0px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #14b789;
+    margin-left: 20px;
+}
+
+.psir2pc-heading > h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.psir2-image-1{
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/nikhil-KO4io-eCAXA-unsplash.jpg');
+}
+
+.psir2-image-2{
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/the-5th-IQYR7N67dhM-unsplash.jpg');
+}
+
+.psir2-image-3{
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg');
+}
+
+.psir2-project-image{
+    width: 320px;
+    height: 340px;
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: -50px;
+    left: 28px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: transform 0.5s ease, bottom 0.5s ease, left 0.5s ease;
+}
+
+.psir2-projects-card:hover .psir2-project-image{
+    transform: rotate(0deg);
+    bottom: 35px;
+    left: 40px;
+}
+
+/* project section styling  */
+
+/* footer section styling  */
+
+
+
+/* footer section styling  */
+
+
 
