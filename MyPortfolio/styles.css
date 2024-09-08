@@ -948,7 +948,7 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.bi{
+.icon-container .bi{
     width: 100%;
     height: 100%;
     padding-top: 40px;
@@ -1157,9 +1157,371 @@ body{
 
 /* footer section styling  */
 
+.footer-section{
+    width: 100vw;
+    height: auto;
+    padding: 100px 0px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.fs-outer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fsi-row1{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.fsir1-spacing-div{
+    height: 100%;
+    width: 50%;
+}
+
+.fsir1-title-section{
+    width:50%;
+    height:100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #14b789;
+
+}
+
+.fsir1-title-section > h2{
+    font-style: dm sans, sans-serif;
+    font-size: 48px;
+    margin-left: 24px;
+    color:white;
+}
+
+.fsir1ts-image-frame{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url('https://templatemo.com/templates/templatemo_578_first_portfolio/images/aerial-view-man-using-computer-laptop-wooden-table.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fsi-row2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fsir2-col-outer{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fsi-row2 .left{
+    border-radius: 20px;
+    background-color: white;
+}
+
+.fsir2-col-inner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fsir2ci-col-left{
+    width: 50%;
+    height: auto;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-right: 1px solid rgb(209, 209, 209);
+}
+
+.fsir2-col-inner > div{
+    padding-top: 40px;
+}
+
+.fsir2ci-col-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fsir2-col-inner strong{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.tags{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.tags a{
+    text-decoration: none;
+    color: #717275;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.tags a:hover{
+    color: white;
+    background-color: #14b789;
+    border: 1px solid #14b789;
+}
+
+.tags li{
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.icons li{
+    width: 40px;
+    height:40px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 100%;
+    border: 1px solid #c0c0c0;
+    background-color: #ffffff;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+.icons li:hover{
+    color: white;
+    background-color: #14b789;
+    border: 1px solid #14b789;
+}
+
+.icons .bi{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fsir2-col-inner p{
+    width: 80%;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(151, 151, 151);
+    margin-bottom: 20px;
+}
+
+.fsir2ci-col-right{
+    width: 50%;
+    height: auto;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.contact-us-form{
+    width: 100%;
+    height: 400px;
+    padding: 0px 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 80px 150px 50px;
+    grid-template-areas: "name name email email"
+                         "website branding ecommerce seo"
+                         "ta ta ta ta"
+                         "button button button button";     
+}
+
+.contact-us-form input{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us-form > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-us-form .name{
+    grid-area: name;
+    /* border: 1px solid rgb(209, 209, 209); */
+}
+
+.contact-us-form .email{
+    grid-area: email;
+    /* border: 1px solid rgb(209, 209, 209); */
+}
+
+.contact-us-form .website{
+    grid-area: website;
+}
+
+.contact-us-form .branding{
+    grid-area: branding;
+}
+
+.contact-us-form .ecommerce{
+    grid-area: ecommerce;
+}
+
+.contact-us-form .seo{
+    grid-area: seo;
+}
+
+.contact-us-form .ta{
+    grid-area: ta;
+}
+
+.contact-us-form .button{
+    grid-area: button;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center!important;
+    align-items: center;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.checkbox-container:hover{
+    border: 2px solid #14b789;
+    background-color: #f9f9f9;
+}
+
+/* .checkbox-container input[type="checkbox"]:checked ~.checkbox-container{
+    border: 2px solid #14b789!important;
+    background-color: #f9f9f9!important;
+} */
+
+.checkbox-container .bi{
+    color: #14b789;
+}
+
+.checkbox-container > label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(151, 151, 151);
+}
+
+.checkbox-container > input{
+    display: none;
+}
+
+.contact-us-form button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #14b789;
+    background-color: #14b789;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.contact-us-form button:hover{
+    background-color: #535da1;
+    color: white;
+    border: 1px solid #535da1;
+}
 
 /* footer section styling  */
-
-
-
